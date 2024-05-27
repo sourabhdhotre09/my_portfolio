@@ -32,8 +32,13 @@
         }
 
         body{
-            background-color: #000;
+            /* background-color: #000; */
             font-family: "Jost", sans-serif;
+            background: url('/image/1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
         }
         img{
             max-width: 100%;
@@ -91,7 +96,8 @@
         }
         .about_section .description{
             line-height: 1.7;
-            font-size: 18px;
+            font-size: 1.125rem;
+            margin-bottom: 30px;
         }
         .about_section .my_img{
             /* height: 550px; */
@@ -99,7 +105,45 @@
             width: 100%;
             border-radius: 20px;
         }
-        
+        .about_section .nav-link{
+            padding: 0;
+            margin-right: 30px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+            background-color: transparent;
+            position: relative;
+        }
+        .nav-pills .nav-link::after{
+            content: '';
+            background-color: red;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            transition: ease-in-out 3s;
+        }
+        .nav-pills .nav-link.active::after{
+            width: 50%;
+            transition: all 2s;
+        }
+        .about_section ul{
+            margin-top: 20px;
+        }
+        .about_section #pills-skills ul{
+            width: 400px;
+            column-count: 2;
+        }
+        .about_section ul li{
+            margin-bottom: 20px;
+        }
+        .about_section .tab-content ul li::first-letter{
+            /* color: var(--brand-color); */
+            font-size: 130%;
+        }
     </style>
 </head>
 <body>
@@ -130,7 +174,7 @@
                     <p><span class="auto_input"></span></p>
                     <h1>Hi, I'm <span class="brand-color">Saurabh</span> <br>Dhotre from Pune</h1>
                     <div class="btn-group mt-2">
-                        <a href="/Saurabh's Resume React.pdf" class="btn btn-primary rounded" download>Download CV</a>
+                        <a href="pdf/Saurabh's_Resume_React.pdf" class="btn btn-primary rounded" download>Download CV</a>
                         <a href="" class="btn btn-outline-primary rounded ms-3">Contact Me</a>
                     </div>
                 </div>
@@ -141,15 +185,78 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img class="my_img" src="img1.jpeg" alt="">
+                    <img class="my_img" src="image/img1.jpeg" alt="">
                 </div>
                 <div class="col-md-7">
                     <h1 class="heading">About Me</h1>
                     <p class="description">
-                        I am a dedicated UI Developer with two years of professional experience, based in Pune. I graduated with a Master's in Computer Applications (MCA) in 2022 and have certifications in Java Full Stack Development and Web Responsiveness from Giri's Tech Hub. My expertise includes <span class="brand-color">HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, and React JS</span>.
+                        I am a dedicated <span class="brand-color">UI Developer</span> with two years of professional experience, based in Pune. I graduated with a Master's in Computer Applications (MCA) in 2022 and have certifications in Java Full Stack Development and Web Responsiveness from Giri's Tech Hub. My expertise includes <span class="brand-color">HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, and React JS</span>.
                         <br><br>
                         My focus is on creating responsive and dynamic web applications with user-friendly interfaces. I am passionate about staying updated with the latest trends in web development and continuously improving my skills. I aim to contribute to innovative and engaging web projects that enhance user experiences.
+                        Let's connect and <span class="brand-color">turn your web visions into reality!</span>
                     </p>
+                    <div class="tab_section">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills"
+                                    type="button" role="tab" aria-controls="pills-skills" aria-selected="true">Skills</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience"
+                                    type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Experience</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education"
+                                    type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0">
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Bootstrap</li>
+                                    <li>Wordpress</li>
+                                    <li>React Js</li>
+                                    <li>JavaScript</li>
+                                    <li>Jquery</li>
+                                    <li>Tailwind Css</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab" tabindex="0">
+                                <ul>
+                                    <li>
+                                        <span class="brand-color">Currently</span><br>
+                                        Splendornet Technologies Pvt. Ltd., Pune [ June 2022 - Present ] 
+                                    </li>
+                                    <li>
+                                        <span class="brand-color">Internship</span><br>
+                                        GSoft Technologies, Pune [ January 2022 - June 2022 ]
+                                    </li>
+                                    <li>
+                                        <span class="brand-color">Full Stack Web Development</span><br>
+                                        At Giri's Tech Hub, Pune [ 2022 - 2023 ]
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" tabindex="0">
+                                <ul>
+                                    <li>
+                                        <span class="brand-color">Post Graduation</span><br>
+                                        MCA at MIT College, Sambhajinagar [ 2020 - 2022 ]
+                                    </li>
+                                    <li>
+                                        <span class="brand-color">Graduation</span><br>
+                                        BCS at Vivekanand College, Sambhajinagar [ 2017 - 2020 ]
+                                    </li>
+                                    <li>
+                                        <span class="brand-color">HSC</span><br>
+                                        Saraswati Bhuwan (SB College), Sambhajinagar [ 2016 - 2017 ]
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
