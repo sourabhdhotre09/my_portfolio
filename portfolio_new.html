@@ -8,142 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/style.css">
     <title>UI Develper Portfolio</title>
     <style>
-        :root{
-            --dark-theme: #222831; 
-            --grey: #393E46;
-            --brand-color: #ff004f;
-            --white:#EEEEEE;
-        }
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            /* font-family: 'Poppins', sans-serif; */
-            font-family: "Jost", sans-serif;
-            color: #fff;
-            text-decoration: none;
-            list-style: none;
-        }
-        html{
-            scroll-behavior: smooth;
-        }
-
-        body{
-            /* background-color: #000; */
-            font-family: "Jost", sans-serif;
-            background: url('/image/1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        img{
-            max-width: 100%;
-        }
-        .brand-color{
-            color: var(--brand-color);
-        }
-        .btn-primary{
-            background-color: var(--brand-color);
-            border-color: var(--brand-color);
-        }
-        .btn-primary:hover,
-        .btn-primary:active{
-            background-color: var(--brand-color);
-            border-color: var(--brand-color);
-        }
-        .btn-outline-primary{
-            border-color: var(--brand-color);
-            color: var(--brand-color);
-        }
-        .btn-outline-primary:hover,
-        .btn-outline-primary:active{
-            border-color: var(--brand-color);
-        }
-        .p-80{
-            padding: 80px 0;
-        }
-        .navbar{
-            padding: 10px 0;
-            
-        }
-        .navbar-brand{
-            font-size: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 500;
-        }
-        .navbar-brand::first-letter{
-            font-size: 40px;
-            color: var(--brand-color);
-        }
-        .hero_section{
-            height: calc(100vh - 80px);
-            display: flex;
-            align-items: center;
-        }
-        .hero_section h1{
-            font-size: 50px;
-            font-weight: 500;
-        }
-
-        /* =================***================= */
-        .about_section .heading{
-            font-size: 50px;
-        }
-        .about_section .description{
-            line-height: 1.7;
-            font-size: 1.125rem;
-            margin-bottom: 30px;
-        }
-        .about_section .my_img{
-            /* height: 550px; */
-            /* object-fit: cover; */
-            width: 100%;
-            border-radius: 20px;
-        }
-        .about_section .nav-link{
-            padding: 0;
-            margin-right: 30px;
-            color: #fff;
-            font-weight: 500;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-            background-color: transparent;
-            position: relative;
-        }
-        .nav-pills .nav-link::after{
-            content: '';
-            background-color: red;
-            height: 2px;
-            position: absolute;
-            left: 0;
-            bottom: -4px;
-            transition: ease-in-out 3s;
-        }
-        .nav-pills .nav-link.active::after{
-            width: 50%;
-            transition: all 2s;
-        }
-        .about_section ul{
-            margin-top: 20px;
-        }
-        .about_section #pills-skills ul{
-            width: 400px;
-            column-count: 2;
-        }
-        .about_section ul li{
-            margin-bottom: 20px;
-        }
-        .about_section .tab-content ul li::first-letter{
-            /* color: var(--brand-color); */
-            font-size: 130%;
-        }
+        
     </style>
 </head>
 <body>
@@ -181,7 +49,7 @@
             </div>
         </div>
     </div>
-    <div class="about_section p-80">
+    <div class="about_section p-60">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -261,6 +129,91 @@
             </div>
         </div>
     </div>
+    <div class="projects_section p-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <h1 class="heading">Projects</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-3 bg-dark">
+                        <i class="icon far fa-file-alt"></i>
+                        <h4 class="title">ToDo List using React Js</h4>
+                        <p class="description">Task management app using React JS for organization.</p>
+                        <a href="https://sourabhdhotre09.github.io/todo_list/">View Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-3 bg-dark">
+                        <i class="icon far fa-file-alt"></i>
+                        <h4 class="title">CRUD Application using React Js</h4>
+                        <p class="description">Developed dynamic web app with React Js, Bootstrap, CSS and MockAPi for custom data.</p>
+                        <a href="https://sourabhdhotre09.github.io/crud-react/">View Demo</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="contact_section p-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left_side">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="info d-inline-block">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:sourabhdhotre09@gmail.com">sourabhdhotre09@gmail.com</a></p>
+                        <p><i class="fas fa-mobile-alt"></i> <a href="tel:+91 8788269542">+91 8788269542</a></p>
+                    </div>
+                    <div class="social-icons mb-4">
+                        <a target="_blank" href="https://www.linkedin.com/in/saurabh-dhotre-a34a2316b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a target="_blank" href="https://github.com/sourabhdhotre09">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/sourabh_dhotre/?igsh=czI1eTJhdDZnam9l">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="btngrp">
+                        <a href="pdf/Saurabh's_Resume_React.pdf" class="btn btn-lg btn-primary rounded" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form id="sheetdb-form" method="POST" action="https://sheetdb.io/api/v1/a3i4pq1no2zqw">
+                        <input type="date" id="todaydate" name="data[Date]" value="" hidden/>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <input type="text" name="data[Name]" class="form-control form-control-lg bg-dark border-dark" placeholder="Your Name">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="email" name="data[Email]" class="form-control form-control-lg bg-dark border-dark" placeholder="Your Email">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <textarea name="data[Message]" class="form-control form-control-lg bg-dark border-dark" placeholder="Your Message" rows="6"></textarea>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="submit" class="btn btn-primary btn-lg px-5" value="Submit">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_section bg-dark">
+        <div class="container">
+            <div class="row p-4 text-center">
+                <div class="col-md-12">
+                    <p class="m-0" style="font-size: 18px;">Copyright © Saurabh Dhotre. <i class="fas fa-heart brand-color"></i> Portfolio 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Auto Type writing -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -272,5 +225,21 @@
             loop:true
         })
     </script>   
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        document.getElementById("todaydate").value = new Date().toLocaleDateString();
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            alert('success')
+          });
+        });
+      </script>
 </body>
 </html>
