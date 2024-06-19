@@ -48,7 +48,8 @@ img{
 }
 .btn-outline-primary:hover,
 .btn-outline-primary:active{
-    border-color: var(--brand-color);
+    border-color: var(--brand-color) !important;
+    background-color: var(--brand-color) !important;
 }
 .p-60{
     padding: 60px 0;
@@ -163,6 +164,15 @@ img{
 }
 .projects_section .card .description{
     font-size: 18px;
+}
+.projects_section p.description {
+    display: -webkit-box;
+    /* max-width: 200px; */
+    -webkit-line-clamp: 3;
+    height: 80px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* =================***================= */
