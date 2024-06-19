@@ -168,7 +168,7 @@ img{
 .projects_section p.description {
     display: -webkit-box;
     /* max-width: 200px; */
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     height: 80px;
     -webkit-box-orient: vertical;
     overflow: hidden;
