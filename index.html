@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>UI Develper Portfolio</title>
     <style>
@@ -40,8 +42,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <p><span class="auto_input"></span></p>
-                    <h1>Hi, I'm <span class="brand-color">Saurabh</span> <br>Dhotre from Pune</h1>
-                    <div class="btn-group mt-2">
+                    <h1  data-aos="fade-down" data-aos-duration="1000">Hi, I'm <span class="brand-color">Saurabh</span> <br>Dhotre from Pune</h1>
+                    <div class="btn-group mt-2" data-aos="fade-up" data-aos-duration="1000">
                         <a href="pdf/Saurabh's_Resume_React.pdf" class="btn btn-primary rounded" download>Download CV</a>
                         <a href="#contact_section" class="btn btn-outline-primary rounded ms-3">Contact Me</a>
                     </div>
@@ -53,17 +55,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img class="my_img" src="image/img1.jpeg" alt="">
+                    <img class="my_img" src="image/profile_front.jpeg" alt="" data-aos="fade-right" data-aos-duration="1000">
                 </div>
                 <div class="col-md-7">
-                    <h1 class="heading">About Me</h1>
-                    <p class="description">
+                    <h1 class="heading" data-aos="fade-up-left" data-aos-duration="1000">About Me</h1>
+                    <p class="description" data-aos="fade-up-left" data-aos-duration="1000">
                         I am a dedicated <span class="brand-color">UI Developer</span> with two years of professional experience, based in Pune. I graduated with a Master's in Computer Applications (MCA) in 2022 and have certifications in Java Full Stack Development and Web Responsiveness from Giri's Tech Hub. My expertise includes <span class="brand-color">HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, and React JS</span>.
                         <br><br>
                         My focus is on creating responsive and dynamic web applications with user-friendly interfaces. I am passionate about staying updated with the latest trends in web development and continuously improving my skills. I aim to contribute to innovative and engaging web projects that enhance user experiences.
                         Let's connect and <span class="brand-color">turn your web visions into reality!</span>
                     </p>
-                    <div class="tab_section">
+                    <div class="tab_section" data-aos="zoom-in-up" data-aos-duration="1500">
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-skills-tab" data-bs-toggle="pill" data-bs-target="#pills-skills"
@@ -138,7 +140,7 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="card mb-3 bg-dark">
+                    <div class="card mb-3 bg-dark" data-aos="flip-left" data-aos-duration="1000">
                         <i class="icon far fa-file-alt"></i>
                         <h4 class="title">ToDo List using React Js</h4>
                         <p class="description">Task management app using React JS for organization. </p>
@@ -146,7 +148,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card mb-3 bg-dark">
+                    <div class="card mb-3 bg-dark" data-aos="flip-left" data-aos-duration="1500">
                         <i class="icon far fa-file-alt"></i>
                         <h4 class="title">CRUD Application using React Js</h4>
                         <p class="description" title="Developed dynamic web app with React Js, Bootstrap, CSS and MockAPi for custom data.">
@@ -163,12 +165,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 left_side">
-                    <h1 class="heading">Contact Me</h1>
-                    <div class="info d-inline-block">
+                    <h1 class="heading" data-aos="zoom-in-right" data-aos-duration="500">Contact Me</h1>
+                    <div class="info d-inline-block" data-aos="zoom-in-right" data-aos-duration="1000">
                         <p><i class="fas fa-envelope"></i> <a href="mailto:sourabhdhotre09@gmail.com">sourabhdhotre09@gmail.com</a></p>
                         <p><i class="fas fa-mobile-alt"></i> <a href="tel:+91 8788269542">+91 8788269542</a></p>
                     </div>
-                    <div class="social-icons mb-4">
+                    <div class="social-icons mb-4" data-aos="zoom-in-right" data-aos-duration="1500">
                         <a target="_blank" href="https://www.linkedin.com/in/saurabh-dhotre-a34a2316b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                             <i class="fab fa-linkedin"></i>
                         </a>
@@ -179,12 +181,12 @@
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
-                    <div class="btngrp">
+                    <div class="btngrp" data-aos="zoom-in-right" data-aos-duration="2000">
                         <a href="pdf/Saurabh's_Resume_React.pdf" class="btn btn-lg btn-primary rounded mb-3" download>Download CV</a>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <form id="sheetdb-form" method="POST" action="https://sheetdb.io/api/v1/a3i4pq1no2zqw">
+                    <form id="sheetdb-form" method="POST" action="https://sheetdb.io/api/v1/a3i4pq1no2zqw" data-aos="zoom-in-left" data-aos-duration="1500">
                         <input type="date" id="todaydate" name="data[Date]" value="" hidden/>
                         <div class="row">
                             <div class="col-md-12">
@@ -216,7 +218,11 @@
             </div>
         </div>
     </div>
-
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Auto Type writing -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>

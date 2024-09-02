@@ -26,6 +26,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 img{
     max-width: 100%;
@@ -92,8 +93,8 @@ img{
     margin-bottom: 30px;
 }
 .about_section .my_img{
-    /* height: 550px; */
-    /* object-fit: cover; */
+    height: 650px;
+    object-fit: cover;
     width: 100%;
     border-radius: 20px;
 }
@@ -231,4 +232,12 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px #212529 inset !important;
     -webkit-text-fill-color: #fff !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .about_section .my_img{
+        height: 550px;
+    }    
 }
