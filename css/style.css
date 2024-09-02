@@ -240,4 +240,8 @@ input:-webkit-autofill:active{
     .about_section .my_img{
         height: 550px;
     }    
+    .hero_section{
+        height: 100vh;
+        height: 100dvh;
+    }
 }
