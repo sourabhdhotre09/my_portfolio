@@ -120,7 +120,7 @@ img{
     transition: all .5s;
 }
 .nav-pills .nav-link.active::after{
-    width: 50%;
+    width: 75%;
     /* transition: all 2s; */
 }
 .about_section ul{
